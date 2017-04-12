@@ -75,7 +75,6 @@ html{
 }
 
 .paddle {
-	z-index: 7;
 	position:absolute;
 	background-color: white;
 	width: 1.75%;
@@ -97,6 +96,7 @@ html{
 }
 
 #leftPaddle{
+	z-index: 8;
 	float: left;
 	left:1%;
 	right:96.5%;
@@ -109,7 +109,7 @@ html{
 }
 
 #rightPaddle{
-
+	z-index:7;
 	float:right;
 	right:1%;
 	left:96.5%;
