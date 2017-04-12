@@ -5,7 +5,7 @@ $(document).ready(function(){
 	var h = $('#ball').height();
 	var pagecenterW = w/2;
 	var pagecenterH = h/2;
-	$("#ball").css({top: pagecenterH-250 + 'px', left: pagecenterW-200 + 'px'});
+// 	$("#ball").css({top: pagecenterH-250 + 'px', left: pagecenterW-200 + 'px'});
 });
 
 
