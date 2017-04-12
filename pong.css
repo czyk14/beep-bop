@@ -130,5 +130,6 @@ html{
 	top: 50%;
 	left: 48.375%;
 	right:48.375%;
+	box-shadow: 3px 3px 2px #ffffff, -3px -3px 2px #ffffff, -3px 3px 2px #ffffff, 3px -3px 2px #ffffff;
 
 }
