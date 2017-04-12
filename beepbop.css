@@ -75,7 +75,7 @@ html{
 }
 
 .paddle {
-	z-index: 5;
+	z-index: 7;
 	position:absolute;
 	background-color: white;
 	width: 1.75%;
@@ -86,7 +86,7 @@ html{
 }
 
 .goal{
-	z-index:7;
+	z-index:5;
 	position: absolute;
 	width:2.5%;
 	height:100%;
@@ -121,7 +121,7 @@ html{
 }
 
 #ball {
-	z-index:6;
+	z-index:7;
 	width:3.25%;
 	border-radius: 100%;
 	background-color: white;
