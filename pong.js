@@ -6,7 +6,7 @@ $(document).ready(function(){
 	var pagecenterW = w/8;
 	var pagecenterH = h/2;
  	$("#ball").css("margin-top", -pagecenterH);
-	$("#ball").css("margin-left", -pagecenterW);
+// 	$("#ball").css("margin-left", -pagecenterW);
 });
 
 
