@@ -130,6 +130,7 @@ html{
 	top: 50%;
 	left: 48.375%;
 	right:48.375%;
+	text-align: center;
 	box-shadow: 1px 1px 4px #ffffff, -1px -1px 4px #ffffff, -1px 1px 4px #ffffff, 1px -1px 4px #ffffff;
 
 }
