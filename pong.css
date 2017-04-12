@@ -77,11 +77,9 @@ html{
 .paddle {
 	z-index: 5;
 	position:absolute;
-	border-style: solid;
-	border-color: transparent;
 	background-color: white;
-	width: 1.5%;
-	height: 15%;
+	width: 1.75%;
+	height: 17.5%;
 	top:45%;
 	bottom:45%;
 
