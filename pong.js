@@ -3,10 +3,10 @@ $(document).ready(function(){
 	var w = $('#ball').width();
 	$('#ball').height(w);
 	var h = $('#ball').height();
-	var pagecenterW = w/2;
+	var pagecenterW = w/4;
 	var pagecenterH = h/2;
  	$("#ball").css("margin-top", -pagecenterH);
-	$("#ball").css("margin-left", -pagecenterW );
+	$("#ball").css("margin-left", -pagecenterW);
 });
 
 
