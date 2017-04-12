@@ -134,6 +134,14 @@ html{
 
 }
 
+#center {
+	top: 50%;
+	left:50%;
+	background-color:green;
+	width:1px;
+	height:1px;
+}
+
 ::-webkit-scrollbar { 
     display: none; 
 }
