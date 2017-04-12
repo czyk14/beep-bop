@@ -135,6 +135,8 @@ html{
 }
 
 #center {
+	position:absolute;
+	z-index: 20;
 	top: 50%;
 	left:50%;
 	background-color:green;
