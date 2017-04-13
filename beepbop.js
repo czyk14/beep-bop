@@ -20,27 +20,33 @@ $(document).keydown(function(e){
 	switch(e.keyCode){
 
 		case 87: //p1 up (w)
-			$("#leftPaddle").top($("#leftPaddle").top()-1)
-			$("#leftPaddle").bottom($("#leftPaddle").bottom()+1)
+			var t = $("#leftPaddle").top();
+			var b = $("#leftPaddle").bottom();
+			$("#leftPaddle").top(t-1);
+			$("#leftPaddle").bottom(b+1);
 
 			break;
 
 		case 83: // p1 down (s)
-
-			$("#leftPaddle").bottom($("#leftPaddle").bottom()-1)
-			$("#leftPaddle").top($("#leftPaddle").top()+1)
+			var t = $("#leftPaddle").top();
+			var b = $("#leftPaddle").bottom();
+			$("#leftPaddle").top(t+1);
+			$("#leftPaddle").bottom(b-1);
 
 			break;
 
 		case 38: //p2 up (upArrow)
-			$("#rightPaddle").bottom($("#rightPaddle").bottom()+1)
-			$("#rightPaddle").top($("#rightPaddle").top()-1)
-
+			var t = $("#rightPaddle").top();
+			var b = $("#rightPaddle").bottom();
+			$("#rightPaddle").top(t-1);
+			$("#rightPaddle").bottom(b+1);
 			break;
 
 		case 40: // p2 down (downArrow)
-			$("#rightPaddle").bottom($("#rightPaddle").bottom()-1)
-			$("#rightPaddle").top($("#rightPaddle").top()+1)
+			var t = $("#rightPaddle").top();
+			var b = $("#rightPaddle").bottom();
+			$("#rightPaddle").top(t+1);
+			$("#rightPaddle").bottom(b-1);
 			break;
 
 	}
