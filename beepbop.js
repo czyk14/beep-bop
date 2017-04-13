@@ -16,7 +16,7 @@ var ball = {
 
 // keydown handler
 $(document).keydown(function(e){
-
+	alert("Keydown!");
 	switch(e.keyCode){
 
 		case 87: //p1 up (w)
