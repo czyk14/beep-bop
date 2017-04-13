@@ -1,6 +1,8 @@
 
 html{
 	background-color: black;
+	border-style: solid;
+	border-color: white;
 }
 
 #scoreBoard{
