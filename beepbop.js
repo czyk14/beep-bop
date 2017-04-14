@@ -24,7 +24,7 @@ function getGoalColor(){
 }
 
 function change(time){
-	var color = getGoalColor();
+	//var color = getGoalColor();
 	if(time % 2 == 0){
 		$(".flash").css("border-color", "white");
 		$("#scoreTitle").css("background", "white");
