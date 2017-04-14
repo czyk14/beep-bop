@@ -26,13 +26,16 @@ function getGoalColor(){
 function change(time){
 	var color = getGoalColor();
 	if(time % 2 == 0){
-		$(".flash").css("border-color", white);
-		$(".flash").css("background", white);
+		$(".flash").css("border-color", "white");
+		$("#scoreTitle").css("background", "white");
+		$(".flash").css("box-shadow", " 3px 3px 5px red");
+		
 			
 	}
 	else{
-		$(".flash").css("border-color", red);
-		$(".flash").css("background", red);	
+		$(".flash").css("border-color", "red");
+		$("#scoreTitle").css("background", "red");
+		$(".flash").css("box-shadow", " 3px 3px 5px white");
 	}
 }
 
