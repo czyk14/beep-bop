@@ -17,6 +17,7 @@ html{
 	height:100%;
 	border-style: dashed;
 	border-color: white;
+	position: absolute;
 }
 
 #scoreBoard{
@@ -83,9 +84,8 @@ html{
 	z-index: 5;
 	position:absolute;
 	left:49.75%;
-	right:49.75%;
 	width:.5%;
-	height:110%;
+	height:100%;
 	background-color: white;
 
 }
