@@ -14,6 +14,36 @@ var ball = {
 
 }
 
+var goalColor;
+function setGoalColor(color){
+	goalColor=color;
+}
+
+function getGoalColor(){
+	return goalColor;
+}
+
+function change(time){
+	var color = getGoalColor();
+	if(time % 2 == 0){
+		$(".flash").css("border-color", white);
+		$(".flash").css("background", white);
+			
+	}
+	else{
+		$(".flash").css("border-color", red);
+		$(".flash").css("background", red);	
+	}
+}
+
+function flash() {
+	var time = 0;
+	while(time < 100){
+		setTimeout(change(time), 500)	
+		time++;
+	}
+}
+
 // keydown handler
 $(document).keydown(function(e){
 	alert("Keydown!");
