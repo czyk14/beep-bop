@@ -28,6 +28,7 @@ function change(time){
 	if(time % 2 == 0){
 		$(".flash").css("border-color", "white");
 		$("#scoreTitle").css("background", "white");
+		$("#centerLine").css("background", "white");
 		$(".flash").css("box-shadow", " 3px 3px 5px red");
 		
 			
@@ -35,13 +36,15 @@ function change(time){
 	else{
 		$(".flash").css("border-color", "red");
 		$("#scoreTitle").css("background", "red");
-		$(".flash").css("box-shadow", " 3px 3px 5px white");
+		$("#centerLine").css("background", "red");
+		$(".flash").css("box-shadow", " 5px 5px 5px white");
 	}
 }
 
 function resetColors() {
 	$(".flash").css("border-color", "white");
 	$("#scoreTitle").css("background", "white");
+	$("#centerLine").css("background", "red");
 	$(".flash").css("box-shadow", " 0 0 0 transparent");
 }
 
