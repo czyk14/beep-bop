@@ -44,14 +44,14 @@ function change(time){
 function resetColors() {
 	$(".flash").css("border-color", "white");
 	$("#scoreTitle").css("background", "white");
-	$("#centerLine").css("background", "red");
+	$("#centerLine").css("background", "white");
 	$(".flash").css("box-shadow", " 0 0 0 transparent");
 }
 
 function flash() {
 	var time = 0;
 	while(time < 100){
-		setTimeout(change(time), 500)	
+		setTimeout(change(time), 1000)	
 		time++;
 	}
 	resetColors();
