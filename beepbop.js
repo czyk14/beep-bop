@@ -29,7 +29,7 @@ function change(time){
 		$(".flash").css("border-color", "white");
 		$("#scoreTitle").css("background", "white");
 		$("#centerLine").css("background", "white");
-		$(".flash").css("box-shadow", " 3px 3px 5px red");
+		$(".flash").css("box-shadow", " 3px 3px 5px red, -3px 3px 5px red, -3px -3px 5px red, 3px -3px 5px red");
 		
 			
 	}
@@ -37,7 +37,7 @@ function change(time){
 		$(".flash").css("border-color", "red");
 		$("#scoreTitle").css("background", "red");
 		$("#centerLine").css("background", "red");
-		$(".flash").css("box-shadow", " 5px 5px 5px white");
+		$(".flash").css("box-shadow", " 5px 5px 5px white, -5px 5px 5px white, -5px -5px 5px white, 5px -5px 5px white");
 	}
 }
 
