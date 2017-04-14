@@ -19,7 +19,7 @@ html{
 }
 
 #scoreBoard{
-    z-index: 5;
+    z-index: 6;
     color: white;
     border-style: solid;
     border-color: white;
