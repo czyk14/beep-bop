@@ -66,27 +66,20 @@ $(document).keydown(function(e){
 		var p1 = $("#leftPaddle").position();
 		var p2 = $("#rightPaddle").position();
 			
-		case 87: //p1 up (w)
-			
+		case 87: //p1 up (w)		
 			$("#leftPaddle").top(p1-1);
-			$("#leftPaddle").bottom(p1+1);
 			break;
 
 		case 83: // p1 down (s)
-			
 			$("#leftPaddle").top(p1+1);
-			$("#leftPaddle").bottom(p1-1);
-
 			break;
 
 		case 38: //p2 up (upArrow)
 			$("#rightPaddle").top(p2-1);
-			$("#rightPaddle").bottom(p2+1);
 			break;
 
 		case 40: // p2 down (downArrow)
 			$("#rightPaddle").top(p2+1);
-			$("#rightPaddle").bottom(p2-1);
 			break;
 
 	}
