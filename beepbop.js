@@ -50,9 +50,13 @@ function resetColors() {
 
 function flash() {
 	var time = 0;
+	var wait = 0;
 	while(time < 100){
-		setTimeout(change(time), 1000)	
-		time++;
+		if(wait % 2000 = 0){
+			change(time)	
+			time++;
+		}
+		wait++;
 	}
 	resetColors();
 }
