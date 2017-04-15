@@ -67,19 +67,19 @@ $(document).keydown(function(e){
 	
 	switch(e.keyCode){
 		case 87: //p1 up (w)		
-			$("#leftPaddle").css("top",(p1-5));
+			$("#leftPaddle").css("top",(p1-10));
 			break;
 
 		case 83: // p1 down (s)
-			$("#leftPaddle").css("top",(p1+5));
+			$("#leftPaddle").css("top",(p1+10));
 			break;
 
 		case 38: //p2 up (upArrow)
-			$("#rightPaddle").css("top", (p2-5));
+			$("#rightPaddle").css("top", (p2-10));
 			break;
 
 		case 40: // p2 down (downArrow)
-			$("#rightPaddle").css("top", (p2+5));
+			$("#rightPaddle").css("top", (p2+10));
 			break;
 
 	}
