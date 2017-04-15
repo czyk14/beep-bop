@@ -72,8 +72,8 @@ function reset() {
 	$("#scoreTitle").css("background", "white");
 	$("#centerLine").css("background", "white");
 	$(".flash").css("box-shadow", " 0 0 0 transparent");
-	$("#leftPaddle").css("top", "45%");
-	$("#rightPaddle").css("top", "45%");
+	$("#leftPaddle").css("top", "41.25%");
+	$("#rightPaddle").css("top", "41.25%");
 	$("#ball").css("top", ballT);
 	$("#ball").css("left", ballL);
 	$("#p1").html(p1Score);
