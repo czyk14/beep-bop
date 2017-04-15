@@ -7,8 +7,8 @@ $(document).ready(function(){
 	var pagecenterH = h/2;
  	$("#ball").css("maring-top", -pagecenterH);
 // 	$("#ball").css("margin-left", -pagecenterW);
-	ballT = $("#ball").top();
-	ballL = $("#ball").left();
+	ballT = $("#ball").position().top;
+	ballL = $("#ball").position().left;
 });
 
 
