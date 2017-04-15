@@ -56,7 +56,7 @@ function flash() {
 		if(time == 50){
 			clearInterval();
 		}
-	} , 500);	
+	} , 250);	
 	resetColors();
 }
 
