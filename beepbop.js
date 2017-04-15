@@ -72,7 +72,7 @@ $(document).on('keydown', function(e) {
         interval = setInterval(function() {
             doSomething(e.keyCode);
             called = true;
-        }, 200);
+        }, 10);
     }
 
 }).on('keyup', function(e) {
