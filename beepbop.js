@@ -102,7 +102,7 @@ $(document).on('keydown', function(e) {
     if(interval == null) {
         called = false;
         interval = setInterval(function() {
-            doSomething(e.keyCode);
+            movePaddles(e.keyCode);
             called = true;
         }, 10);
     }
@@ -114,9 +114,11 @@ $(document).on('keydown', function(e) {
         doSomething(e.keyCode);
 });
 
-function doSomething(keyCode) {
+function movePaddles(keyCode) {
      var p1 = $("#leftPaddle").position().top;
      var p2 = $("#rightPaddle").position().top;
+     var topLim = $("#field").position().top;
+     var bottomLim = $("#field").position().top;
      switch(keyCode){
 		case 87: //p1 up (w)		
 			$("#leftPaddle").css("top",(p1-3));
