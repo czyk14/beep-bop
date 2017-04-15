@@ -62,7 +62,6 @@ function flash() {
 
 // keydown handler
 $(document).keydown(function(e){
-	alert("Keydown!");
 	switch(e.keyCode){
 		var p1 = $("#leftPaddle").position();
 		var p2 = $("#rightPaddle").position();
