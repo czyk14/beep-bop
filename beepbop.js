@@ -52,7 +52,7 @@ function flash() {
 	var time = 0;
 
 	while(time < 100){
-		setTimeout(function() { change(time)} , 500);	
+		setInterval(function() { change(time)} , 500);	
 		time++;	
 	}
 	resetColors();
