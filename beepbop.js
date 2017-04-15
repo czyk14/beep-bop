@@ -62,10 +62,10 @@ function flash() {
 
 // keydown handler
 $(document).keydown(function(e){
+	var p1 = $("#leftPaddle").position().top;
+	var p2 = $("#rightPaddle").position().top;
+	
 	switch(e.keyCode){
-		var p1 = $("#leftPaddle").position().top;
-		var p2 = $("#rightPaddle").position().top;
-			
 		case 87: //p1 up (w)		
 			$("#leftPaddle").top(p1-1);
 			break;
