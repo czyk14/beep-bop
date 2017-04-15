@@ -115,8 +115,8 @@ $(document).on('keydown', function(e) {
 });
 
 function movePaddles(keyCode) {
-     var p1 = $("#leftPaddle").offset().top;
-     var p2 = $("#rightPaddle").offset().top;
+     var p1 = $("#leftPaddle").position().top;
+     var p2 = $("#rightPaddle").position().top;
      var topLim = 0;
      var bottomLim = $("#field").height;
      switch(keyCode){
