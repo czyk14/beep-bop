@@ -61,26 +61,46 @@ function flash() {
 }
 
 // keydown handler
-$(document).keydown(function(e){
-	var p1 = $("#leftPaddle").position().top;
-	var p2 = $("#rightPaddle").position().top;
+
+var interval;
+var called = false;
+
+$(document).on('keydown', function(e) {
+    var p1 = $("#leftPaddle").position().top;
+    var p2 = $("#rightPaddle").position().top;
 	
-	switch(e.keyCode){
+    if(interval == null) {
+        called = false;
+        interval = setInterval(function() {
+            doSomething(e.keyCode);
+            called = true;
+        }, 200);
+    }
+
+}).on('keyup', function(e) {
+    clearInterval(interval); 
+    interval = null;
+    if(!called)
+        doSomething(e.keyCode);
+});
+
+function doSomething(keyCode) {
+     switch(keyCode){
 		case 87: //p1 up (w)		
-			$("#leftPaddle").css("top",(p1-10));
+			$("#leftPaddle").css("top",(p1-1));
 			break;
 
 		case 83: // p1 down (s)
-			$("#leftPaddle").css("top",(p1+10));
+			$("#leftPaddle").css("top",(p1+1));
 			break;
 
 		case 38: //p2 up (upArrow)
-			$("#rightPaddle").css("top", (p2-10));
+			$("#rightPaddle").css("top", (p2-1));
 			break;
 
 		case 40: // p2 down (downArrow)
-			$("#rightPaddle").css("top", (p2+10));
+			$("#rightPaddle").css("top", (p2+1));
 			break;
 
 	}
-});
+}
