@@ -64,35 +64,30 @@ function flash() {
 $(document).keydown(function(e){
 	alert("Keydown!");
 	switch(e.keyCode){
-
+		var p1 = $("#leftPaddle").position();
+		var p2 = $("#rightPaddle").position();
+			
 		case 87: //p1 up (w)
-			var t = $("#leftPaddle").top();
-			var b = $("#leftPaddle").bottom();
-			$("#leftPaddle").top(t-1);
-			$("#leftPaddle").bottom(b+1);
-
+			
+			$("#leftPaddle").top(p1-1);
+			$("#leftPaddle").bottom(p1+1);
 			break;
 
 		case 83: // p1 down (s)
-			var t = $("#leftPaddle").top();
-			var b = $("#leftPaddle").bottom();
-			$("#leftPaddle").top(t+1);
-			$("#leftPaddle").bottom(b-1);
+			
+			$("#leftPaddle").top(p1+1);
+			$("#leftPaddle").bottom(p1-1);
 
 			break;
 
 		case 38: //p2 up (upArrow)
-			var t = $("#rightPaddle").top();
-			var b = $("#rightPaddle").bottom();
-			$("#rightPaddle").top(t-1);
-			$("#rightPaddle").bottom(b+1);
+			$("#rightPaddle").top(p2-1);
+			$("#rightPaddle").bottom(p2+1);
 			break;
 
 		case 40: // p2 down (downArrow)
-			var t = $("#rightPaddle").top();
-			var b = $("#rightPaddle").bottom();
-			$("#rightPaddle").top(t+1);
-			$("#rightPaddle").bottom(b-1);
+			$("#rightPaddle").top(p2+1);
+			$("#rightPaddle").bottom(p2-1);
 			break;
 
 	}
