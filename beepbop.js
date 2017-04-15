@@ -117,26 +117,27 @@ $(document).on('keydown', function(e) {
 function movePaddles(keyCode) {
      var p1 = $("#leftPaddle").offset().top;
      var p2 = $("#rightPaddle").offset().top;
-//      var topLim = $("#field").position().top;
-//      var bottomLim = $("#field").position().top;
+     var topLim = 0;
+     var bottomLim = $("#field").height;
      switch(keyCode){
 		case 87: //p1 up (w)
-// 		     if((p1-3) > 0)  {  $("#leftPaddle").offset().top = p1-3;  }
-// 		     else  {  $("#leftPaddle").css("top",(0));  }
-		    	$("#leftPaddle").offset().top = p1-3;
+ 		     	if((p1-3) > topLim)  {  $("#leftPaddle").css("top" ,p1-3);  }
+ 		     	else  {  $("#leftPaddle").css("top",(topLim));  }
 			break;
 
 		case 83: // p1 down (s)
-			//$("#leftPaddle").css("top",(p1+3));
-		    	$("#leftPaddle").offset().top=p1+3;
+		     	if((p1+3) < bottomLim)  {  $("#leftPaddle").css("top" , p1+3);  }
+ 		     	else  {  $("#leftPaddle").css("top", bottomLim);  }
 			break;
 
 		case 38: //p2 up (upArrow)
-			$("#rightPaddle").css("top", (p2-3));
+			if((p2-3) > topLim)  {  $("#rightPaddle").css("top" ,p2-3);  }
+ 		     	else  {  $("#rightPaddle").css("top",(topLim));  }
 			break;
 
 		case 40: // p2 down (downArrow)
-			$("#rightPaddle").css("top", (p2+3));
+			if((p2+3) < bottomLim)  {  $("#rightPaddle").css("top" , p2+3);  }
+ 		     	else  {  $("#rightPaddle").css("top", bottomLim);  }
 			break;
 		     
 	     	case 13: // launch ball at start
