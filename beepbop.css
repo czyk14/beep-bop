@@ -133,14 +133,13 @@ html{
 
 #ball {
 	z-index:7;
-	width:3%;
+	width:2.5%;
 	border-radius: 100%;
 	background-color: white;
 	border-style: solid; 
 	position: absolute;
 	top: 50%;
-	left: 48.375%;
-	right:48.375%;
+	left: 48.75%;
 	text-align: center;
 	box-shadow: 1px 1px 4px #ffffff, -1px -1px 4px #ffffff, -1px 1px 4px #ffffff, 1px -1px 4px #ffffff;
 
