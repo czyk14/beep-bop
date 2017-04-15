@@ -57,7 +57,7 @@ function flash() {
 		    clearInterval(timer);
 		    resetColors();
 		}
-	} , 200);	
+	} , 150);	
 }
 
 // keydown handler
