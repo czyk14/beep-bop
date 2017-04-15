@@ -115,17 +115,20 @@ $(document).on('keydown', function(e) {
 });
 
 function movePaddles(keyCode) {
-     var p1 = $("#leftPaddle").position().top;
-     var p2 = $("#rightPaddle").position().top;
-     var topLim = $("#field").position().top;
-     var bottomLim = $("#field").position().top;
+     var p1 = $("#leftPaddle").offset().top;
+     var p2 = $("#rightPaddle").offset().top;
+//      var topLim = $("#field").position().top;
+//      var bottomLim = $("#field").position().top;
      switch(keyCode){
-		case 87: //p1 up (w)		
-			$("#leftPaddle").css("top",(p1-3));
+		case 87: //p1 up (w)
+// 		     if((p1-3) > 0)  {  $("#leftPaddle").offset().top = p1-3;  }
+// 		     else  {  $("#leftPaddle").css("top",(0));  }
+		    	$("#leftPaddle").offset().top = p1-3;
 			break;
 
 		case 83: // p1 down (s)
-			$("#leftPaddle").css("top",(p1+3));
+			//$("#leftPaddle").css("top",(p1+3));
+		    	$("#leftPaddle").offset().top=p1+3;
 			break;
 
 		case 38: //p2 up (upArrow)
