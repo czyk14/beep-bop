@@ -1,4 +1,4 @@
-
+var ballT, ballL;
 $(document).ready(function(){
 	var w = $('#ball').width();
 	$('#ball').height(w);
@@ -7,6 +7,8 @@ $(document).ready(function(){
 	var pagecenterH = h/2;
  	$("#ball").css("maring-top", -pagecenterH);
 // 	$("#ball").css("margin-left", -pagecenterW);
+	ballT = $("#ball").top();
+	ballL = $("#ball").left();
 });
 
 
@@ -46,6 +48,10 @@ function reset() {
 	$("#scoreTitle").css("background", "white");
 	$("#centerLine").css("background", "white");
 	$(".flash").css("box-shadow", " 0 0 0 transparent");
+	$("#leftPaddle").css("top", "45%");
+	$("#righPaddle").css("top", "45%");
+	$("#ball").css("top", ballT);
+	$("#ball").css("left", ballL);
 	
 }
 
