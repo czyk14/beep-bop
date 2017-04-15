@@ -41,11 +41,12 @@ function change(time){
 	}
 }
 
-function resetColors() {
+function reset() {
 	$(".flash").css("border-color", "white");
 	$("#scoreTitle").css("background", "white");
 	$("#centerLine").css("background", "white");
 	$(".flash").css("box-shadow", " 0 0 0 transparent");
+	
 }
 
 function flash() {
@@ -55,7 +56,7 @@ function flash() {
 		time++;
 		if(time == 50){
 		    clearInterval(timer);
-		    resetColors();
+		    reset();
 		}
 	} , 150);	
 }
@@ -65,10 +66,7 @@ function flash() {
 var interval;
 var called = false;
 
-$(document).on('keydown', function(e) {
-    var p1 = $("#leftPaddle").position().top;
-    var p2 = $("#rightPaddle").position().top;
-	
+$(document).on('keydown', function(e) {	
     if(interval == null) {
         called = false;
         interval = setInterval(function() {
@@ -85,6 +83,8 @@ $(document).on('keydown', function(e) {
 });
 
 function doSomething(keyCode) {
+     var p1 = $("#leftPaddle").position().top;
+     var p2 = $("#rightPaddle").position().top;
      switch(keyCode){
 		case 87: //p1 up (w)		
 			$("#leftPaddle").css("top",(p1-1));
