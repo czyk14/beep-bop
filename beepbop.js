@@ -55,9 +55,9 @@ function flash() {
 		time++;
 		if(time == 50){
 		    clearInterval(timer);
+		    resetColors();
 		}
 	} , 200);	
-	resetColors();
 }
 
 // keydown handler
