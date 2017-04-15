@@ -37,29 +37,20 @@ function getTurnNumber(){
 	return turnNum;
 }
 
-var goalColor;
-function setGoalColor(color){
-	goalColor=color;
-}
-
-function getGoalColor(){
-	return goalColor;
-}
-
-function change(time){
-	//var color = getGoalColor();
+function change(time, color){
+	var newColor = color;
 	if(time % 2 == 0){
 		$(".flash").css("border-color", "white");
 		$("#scoreTitle").css("background", "white");
 		$("#centerLine").css("background", "white");
-		$(".flash").css("box-shadow", " 3px 3px 5px red, -3px 3px 5px red, -3px -3px 5px red, 3px -3px 5px red");
+		$(".flash").css("box-shadow", " 3px 3px 5px " +color", -3px 3px 5px "+color", -3px -3px 5px "+color", 3px -3px 5px "+color);
 		
 			
 	}
 	else{
-		$(".flash").css("border-color", "red");
-		$("#scoreTitle").css("background", "red");
-		$("#centerLine").css("background", "red");
+		$(".flash").css("border-color", color);
+		$("#scoreTitle").css("background", color);
+		$("#centerLine").css("background", color);
 		$(".flash").css("box-shadow", " 5px 5px 5px white, -5px 5px 5px white, -5px -5px 5px white, 5px -5px 5px white");
 	}
 }
@@ -83,10 +74,10 @@ function reset() {
 	
 }
 
-function flash() {
+function flash(color) {
 	var time = 0;
 	var timer = setInterval(function() {
-		change(time);
+		change(time, color);
 		time++;
 		if(time == 50){
 		    clearInterval(timer);
