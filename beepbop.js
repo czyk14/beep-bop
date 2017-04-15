@@ -1,4 +1,8 @@
 var ballT, ballL;
+var launched = false;
+var turnNum = 0;
+var p1Score = 0;
+var p2Score = 0;
 $(document).ready(function(){
 	var w = $('#ball').width();
 	$('#ball').height(w);
@@ -9,11 +13,29 @@ $(document).ready(function(){
 // 	$("#ball").css("margin-left", -pagecenterW);
 	ballT = $("#ball").position().top;
 	ballL = $("#ball").position().left;
+	$("#p1").html(p1Score);
+	$("#p2").html(p2Score);
 });
 
 
-var ball = {
+function launchBall(){
+	var  turn = getTurnNumber();
+	if(!launched){
+		if(turn % 2 == 0){
+			
+		}
+		else{
+			
+		}
+	}
+}
 
+function setTurnNumber(num){
+	turnNum = num;
+}
+
+function getTurnNumber(){
+	return turnNum;
 }
 
 var goalColor;
@@ -43,15 +65,21 @@ function change(time){
 	}
 }
 
+
+//resets game for next turn
 function reset() {
 	$(".flash").css("border-color", "white");
 	$("#scoreTitle").css("background", "white");
 	$("#centerLine").css("background", "white");
 	$(".flash").css("box-shadow", " 0 0 0 transparent");
 	$("#leftPaddle").css("top", "45%");
-	$("#righPaddle").css("top", "45%");
+	$("#rightPaddle").css("top", "45%");
 	$("#ball").css("top", ballT);
 	$("#ball").css("left", ballL);
+	$("#p1").html(p1Score);
+	$("#p2").html(p2Score);
+	launched = false;
+	turnNum++;
 	
 }
 
@@ -68,10 +96,8 @@ function flash() {
 }
 
 // keydown handler
-
 var interval;
 var called = false;
-
 $(document).on('keydown', function(e) {	
     if(interval == null) {
         called = false;
@@ -107,6 +133,9 @@ function doSomething(keyCode) {
 		case 40: // p2 down (downArrow)
 			$("#rightPaddle").css("top", (p2+3));
 			break;
+		     
+	     	case 13: // launch ball at start
+		     launchBall();
 
 	}
 }
