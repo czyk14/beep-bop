@@ -43,7 +43,7 @@ function change(time, color){
 		$(".flash").css("border-color", "white");
 		$("#scoreTitle").css("background", "white");
 		$("#centerLine").css("background", "white");
-		$(".flash").css("box-shadow", " 3px 3px 5px " +color", -3px 3px 5px "+color", -3px -3px 5px "+color", 3px -3px 5px "+color);
+		$(".flash").css("box-shadow", " 3px 3px 5px " +color+", -3px 3px 5px "+color+", -3px -3px 5px "+color+", 3px -3px 5px "+color);
 		
 			
 	}
