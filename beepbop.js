@@ -13,6 +13,7 @@ $(document).ready(function(){
 	h = $('#ball').height();
 	pagecenterH = h/2;
  	$("#ball").css("maring-top", -pagecenterH);
+	$("#ball").css("maring-left", -pagecenterW);
 	$("#p1").html(p1Score);
 	$("#p2").html(p2Score);
 });
@@ -68,6 +69,7 @@ function reset() {
 	$("#ball").css("top", "50%");
 	$("#ball").css("left", "48.6%");
 	$("#ball").css("maring-top", -pagecenterH);
+	$("#ball").css("maring-left", -pagecenterW);
 	$("#p1").html(p1Score);
 	$("#p2").html(p2Score);
 	launched = false;
