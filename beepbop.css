@@ -9,6 +9,8 @@ html{
 }
 
 body{
+	position:absolute;
+    	z-index: 20;
 	overflow:hidden;
 	width: 98%;
 	height:97.5%;
