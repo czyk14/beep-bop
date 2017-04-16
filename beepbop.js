@@ -6,12 +6,12 @@ var p1Score = 0;
 var p2Score = 0;
 var w = $('#ball').width();
 var h;
-var centerL = ($("#field").width()/2) - (w/2);
+var centerL = ($("#field").width()/2) - (w/4);
 var centerT;
 $(document).ready(function(){
 	$('#ball').height(w);
 	h = $('#ball').height();
-	centerT = ($("#field").height()/2) - (h/2);
+	centerT = ($("#field").height()/2) - (h/4);
  	$("#ball").css("top", centerT);
 	$("#ball").css("left", centerL);
 	$("#p1").html(p1Score);
