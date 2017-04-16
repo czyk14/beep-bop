@@ -1,13 +1,14 @@
 
 html{
 	background-color: black;
-}
-
-body{
-	overflow:hidden;
+	background-image: url("resources/leather.jpg");
 	background-image: url("resources/leather.jpg");
 	width:97%;
 	height:97%;
+}
+
+body{
+	overflow:hidden;	
 }
 
 /* canvas {
