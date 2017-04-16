@@ -12,6 +12,8 @@ body{
 	overflow:hidden;
 	width: 97%;
 	height:97%;
+	border-style: double;
+	border-color: limegreen;
 }
 
 /* canvas {
