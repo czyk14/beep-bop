@@ -109,10 +109,12 @@ $(document).on('keydown', function(e) {
 });
 
 function movePaddles(keyCode) {
+		
      var p1 = $("#leftPaddle").position().top;
      var p2 = $("#rightPaddle").position().top;
      var topLim = 0;
-     var bottomLim = $("#field").height();
+     var bottomLim = $("#field").height() - $(".paddle").height();
+     bottomLim -= $(".paddle").offset().top;
      switch(keyCode){
 		case 87: //p1 up (w)
  		     	if((p1-3) > topLim)  {  $("#leftPaddle").css("top" ,p1-3);  }
