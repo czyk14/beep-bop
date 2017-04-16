@@ -12,7 +12,6 @@ $(document).ready(function(){
 	$('#ball').height(w);
 	h = $('#ball').height();
 	centerT = ($("#field").height()/2) - (h/2) - $('#ball').css('borderTopWidth');
-	centerT = ($("#field").height()/2);
  	$("#ball").css("top", centerT);
 	$("#ball").css("left", centerL);
 	$("#p1").html(p1Score);
