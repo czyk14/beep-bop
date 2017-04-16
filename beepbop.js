@@ -1,3 +1,4 @@
+
 var ballT, ballL;
 var launched = false;
 var turnNum = 0;
