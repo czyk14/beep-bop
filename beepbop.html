@@ -2,45 +2,47 @@
 
 <html>
 	<head>
-		<title>Pong</title>
-		<link rel="stylesheet" href="pong.css">
+		<title>Beep-Bop</title>
+		<link rel="stylesheet" href="beepbop.css">
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 	</head>
 
 	
 
 	<body>
+		<div id = "field" class = "flash">
+			<div id = "scoreBoard" class = "flash">
+				<div id= "scoreTitle" class = "flash">SCORE:</div>
 
-		<div id = "scoreBoard" class = "flash">
-			<div id= "scoreTitle" class = "flash">SCORE:</div>
+				<div id = "scores">
 
-			<div id = "scores">
+					<div id = "p1score">Player 1:
+						<p class = "score" id = "p1"></p>
+					</div>
 
-				<div id = "p1score">Player 1:
-					<p class = "score">0</p>
-				</div>
+					<div id = "p2score">Player 2:
+						<p class = "score" id="p2"></p>
+					</div>
 
-				<div id = "p2score">Player 2:
-					<p class = "score">0</p>
 				</div>
 
 			</div>
 
+
+			<div id = "centerLine" class = "flash"></div>
+
+			<div id = "leftGoal" class = "goal"></div>
+			<div id = "leftPaddle" class ="paddle" ></div>
+
+			<div id = "rightGoal" class = "goal"></div>
+			<div id = "rightPaddle" class ="paddle" ></div>
+
+			<div id = "ball"></div>			
 		</div>
-
-
-		<div id = "centerLine" class = "flash"></div>
-		<div id = "leftPaddle" class ="paddle" ></div>
-		<div id = "leftGoal" class = "goal"></div>
-		<div id = "rightPaddle" class ="paddle" ></div>
-		<div id = "rightGoal" class = "goal"></div>
-		<div id = "ball"></div>
-
 	</body>
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
 	</script>
-	<script src="pong.js"></script>
+	<script src="beepbop.js"></script>
 
 </html>
-
