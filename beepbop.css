@@ -13,9 +13,9 @@ body{
     	z-index: 20;
 	overflow:hidden;
 	width: 98%;
-	height:97.5%;
+	height:96.5%;
 	border-style: double;
-	border-color: limegreen;
+	border-color: transparent;
 }
 
 /* canvas {
