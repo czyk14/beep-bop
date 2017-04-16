@@ -112,7 +112,7 @@ function movePaddles(keyCode) {
      var p1 = $("#leftPaddle").position().top;
      var p2 = $("#rightPaddle").position().top;
      var topLim = 0;
-     var bottomLim = $("#field").height() - $(".paddle").height();
+     var bottomLim = $("#field").position().bottom;
      switch(keyCode){
 		case 87: //p1 up (w)
  		     	if((p1-3) > topLim)  {  $("#leftPaddle").css("top" ,p1-3);  }
