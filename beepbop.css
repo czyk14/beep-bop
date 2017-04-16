@@ -5,6 +5,7 @@ html{
 
 body{
 	overflow:hidden;
+	background-image: url("/resources/leather.jpg");
 	width:97%;
 	height:97%;
 }
