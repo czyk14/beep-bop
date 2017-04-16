@@ -10,8 +10,8 @@ html{
 
 body{
 	overflow:hidden;
-	width: 97%;
-	height:97%;
+	width: 98%;
+	height:97.5%;
 	border-style: double;
 	border-color: limegreen;
 }
@@ -24,7 +24,7 @@ body{
 }
  */
 
-#field{
+body #field{
 	z-index: 5;
 	width:100%;
 	height:100%;
