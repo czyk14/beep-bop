@@ -2,6 +2,8 @@
 html{
 /* 	background-color: black; */
 	background-image: url("resources/leather.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
 	width:97%;
 	height:97%;
 }
