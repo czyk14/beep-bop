@@ -105,7 +105,7 @@ $(document).on('keydown', function(e) {
     clearInterval(interval); 
     interval = null;
     if(!called)
-        doSomething(e.keyCode);
+        movePaddles(e.keyCode);
 });
 
 function movePaddles(keyCode) {
