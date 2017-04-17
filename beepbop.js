@@ -4,13 +4,13 @@ var launched = false;
 var turnNum = 0;
 var p1Score = 0;
 var p2Score = 0;
-var w = $('#ball').width() + (2 * $('#ball').css('borderLeftWidth'));
+var w = $('#ball').width() + (2 * $("#ball").css("border-left-width"));
 var h;
 var centerL = ($("#field").width()/2) - (w/2) ;
 var centerT;
 $(document).ready(function(){
 	$('#ball').height(w);
-	h = $('#ball').height()+(2 * $('#ball').css('borderTopWidth'));
+	h = $('#ball').height()+(2 * $('#ball').css('border-left-width'));
 	centerT = ($("#field").height()/2) - (h/2);
  	$("#ball").css("top", centerT);
 	$("#ball").css("left", centerL);
