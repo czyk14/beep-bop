@@ -152,7 +152,8 @@ body #field{
 	width:2.5%;
 	border-radius: 100%;
 	background-color: white;
-	border-style: solid; 
+	border-style: solid;
+	border-width: 1%;
 	position: absolute;
 	top: 50%;
 	left: 48.6%;
