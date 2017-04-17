@@ -4,14 +4,16 @@ var launched = false;
 var turnNum = 0;
 var p1Score = 0;
 var p2Score = 0;
-var w = $('#ball').width() + (2 * parseInt($("#ball").css("border-left-width")));
+var w = $('#ball').width();
 var h;
-var centerL = ($("#field").width()/2) - (w/2) ;
+var centerL;
 var centerT;
 $(document).ready(function(){
 	$('#ball').height(w);
 	h = $('#ball').height()+(2 * parseInt($('#ball').css('border-left-width')));
+	w += 2 * parseInt($('#ball').css('border-left-width'))
 	centerT = ($("#field").height()/2) - (h/2);
+	centerL = ($("#field").width()/2) - (w/2);
  	$("#ball").css("top", centerT);
 	$("#ball").css("left", centerL);
 	$("#p1").html(p1Score);
