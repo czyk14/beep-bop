@@ -17,7 +17,9 @@ $(document).ready(function(){
  	$("#ball").css("top", centerT);
 	$("#ball").css("left", centerL);
 	$("#p1").html(p1Score);
-	$("#p2").html(p2Score);	
+	$("#p2").html(p2Score);
+	alert("calling game");
+	game();
 });
 
 
@@ -219,7 +221,4 @@ function movePaddles(keyCode) {
 // 	Render.run(render);
 	
 // }
-
-alert("calling game");
-game();
 
