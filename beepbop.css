@@ -166,6 +166,8 @@ body #field{
 	height: 1px;
 	position: absolute;
 	background-color: red;
+	top: -50%;
+	right: -50%;
 }
 
 ::-webkit-scrollbar { 
