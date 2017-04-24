@@ -161,6 +161,13 @@ body #field{
 
 }
 
+#ballCenter{
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	background-color: red;
+}
+
 ::-webkit-scrollbar { 
     display: none; 
 }
