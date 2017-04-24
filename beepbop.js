@@ -46,7 +46,7 @@ function game(){
 	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 
 	// add all of the bodies to the world
-	World.add(engine.world, [boxA, boxB, ground]);
+	World.add(engine.world, [lPaddle, rPaddle, ground]);
 
 	// run the engine
 	Engine.run(engine);
