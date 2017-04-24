@@ -43,7 +43,8 @@ function game(){
 // 	var boxB = Bodies.rectangle(450, 50, 80, 80);
 	var lPaddle = document.getElementById("leftPaddle");
 	var rPaddle = document.getElementById("rightPaddle");
-	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+// 	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+	var boundary = document.getElementById("field").style.border;
 
 	// add all of the bodies to the world
 	World.add(engine.world, [lPaddle, rPaddle, ground]);
