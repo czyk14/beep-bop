@@ -28,8 +28,8 @@ body{
 
 body #field{
 	z-index: 5;
-	width:100%;
-	height:100%;
+/* 	width:100%;
+	height:100%; */
 	border-style: solid;
 	border-color: white;
 	position: absolute;
