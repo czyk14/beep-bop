@@ -18,11 +18,14 @@ $(document).ready(function(){
 	$("#ball").css("left", centerL);
 	$("#p1").html(p1Score);
 	$("#p2").html(p2Score);
+	alert("calling game");
 	game();
 });
 
 
 function game(){
+	alert("game just called");
+	
 	// module aliases
 	var Engine = Matter.Engine,
 	    Render = Matter.Render,
@@ -42,9 +45,13 @@ function game(){
 	// create two boxes and a ground
 	var boxA = Bodies.rectangle(400, 200, 80, 80);
 	var boxB = Bodies.rectangle(450, 50, 80, 80);
+	
 	alert(boxA);
+	
 	var lPaddle = Body.create(document.getElementById("leftPaddle"));
+	
 	alert(lPaddle);
+	
 	var rPaddle = Body.create(document.getElementById("rightPaddle"));
 	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 	var boundary = Body.create(document.getElementById("field").style.border);
