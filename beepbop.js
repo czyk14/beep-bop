@@ -16,6 +16,10 @@ $(document).ready(function(){
 	centerL = ($("#field").width()/2) - (w/2);
  	$("#ball").css("top", centerT);
 	$("#ball").css("left", centerL);
+	w = $('#centerLine').width();
+	w += 2 * parseInt($('#centerLine').css('border-left-width'))
+	centerL = ($("#field").width()/2) - (w/2);
+	$("#centerLine").css("left", centerL);
 	$("#p1").html(p1Score);
 	$("#p2").html(p2Score);
 	game();
