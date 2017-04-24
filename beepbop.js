@@ -36,7 +36,7 @@ function game(){
 
 	// create a renderer
 	var render = Render.create({
-	    element: document.getElementById("field"),
+	    element: $("#field"),
 	    engine: engine
 	});
 
@@ -44,9 +44,12 @@ function game(){
 // 	var boxA = Bodies.rectangle(400, 200, 80, 80);
 // 	var boxB = Bodies.rectangle(450, 50, 80, 80);
 // 	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
-	var lPaddle = Body.create(document.getElementById("leftPaddle"));
-	var rPaddle = Body.create(document.getElementById("rightPaddle"));
-	var boundary = Body.create(document.getElementById("field").style.border, {isStatic: true});
+// 	var lPaddle = Body.create(document.getElementById("leftPaddle"));
+// 	var rPaddle = Body.create(document.getElementById("rightPaddle"));
+// 	var boundary = Body.create(document.getElementById("field").style.border, {isStatic: true});
+	var lPaddle = $("#leftPaddle");
+	var rPaddle = $("#rightPaddle");
+	var boundary = $("#field").style.border;
 
 	// add all of the bodies to the world
 	World.add(engine.world, [lPaddle, rPaddle, boundary]);
