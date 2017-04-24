@@ -18,46 +18,44 @@ $(document).ready(function(){
 	$("#ball").css("left", centerL);
 	$("#p1").html(p1Score);
 	$("#p2").html(p2Score);
-	game();
+	Physics();
 });
-
-
-function game(){
+// function game(){
 	
-	// module aliases
-	var Engine = Matter.Engine,
-	    Render = Matter.Render,
-	    World = Matter.World,
-	    Bodies = Matter.Bodies,
-	    Body = Matter.Body;
+// 	// module aliases
+// 	var Engine = Matter.Engine,
+// 	    Render = Matter.Render,
+// 	    World = Matter.World,
+// 	    Bodies = Matter.Bodies,
+// 	    Body = Matter.Body;
 
-	// create an engine
-	var engine = Engine.create();
+// 	// create an engine
+// 	var engine = Engine.create();
 
-	// create a renderer
-	var render = Render.create({
-	    element: document.getElementById("field"),
-	    engine: engine
-	});
+// 	// create a renderer
+// 	var render = Render.create({
+// 	    element: document.getElementById("field"),
+// 	    engine: engine
+// 	});
 
-	// create two boxes and a ground
-// 	var boxA = Bodies.rectangle(400, 200, 80, 80);
-// 	var boxB = Bodies.rectangle(450, 50, 80, 80);
-// 	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
-	var lPaddle = Body.create(document.getElementById("leftPaddle"));
-	var rPaddle = Body.create(document.getElementById("rightPaddle"));
-	var boundary = Body.create(document.getElementById("field").style.border, {isStatic: true});
+// 	// create two boxes and a ground
+// // 	var boxA = Bodies.rectangle(400, 200, 80, 80);
+// // 	var boxB = Bodies.rectangle(450, 50, 80, 80);
+// // 	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+// 	var lPaddle = Body.create(document.getElementById("leftPaddle"));
+// 	var rPaddle = Body.create(document.getElementById("rightPaddle"));
+// 	var boundary = Body.create(document.getElementById("field").style.border, {isStatic: true});
 
-	// add all of the bodies to the world
-	World.add(engine.world, [lPaddle, rPaddle, boundary]);
+// 	// add all of the bodies to the world
+// 	World.add(engine.world, [lPaddle, rPaddle, boundary]);
 
-	// run the engine
-	Engine.run(engine);
+// 	// run the engine
+// 	Engine.run(engine);
 
-	// run the renderer
-	Render.run(render);
+// 	// run the renderer
+// 	Render.run(render);
 	
-}
+// }
 
 
 function launchBall(){
