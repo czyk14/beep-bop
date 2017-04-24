@@ -46,7 +46,7 @@ function game(){
 // 	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 	var lPaddle = Body.create(document.getElementById("leftPaddle"));
 	var rPaddle = Body.create(document.getElementById("rightPaddle"));
-	var boundary = Body.create(document.getElementById("field").style.border {isStatic: true});
+	var boundary = Body.create(document.getElementById("field").style.border, {isStatic: true});
 
 	// add all of the bodies to the world
 	World.add(engine.world, [lPaddle, rPaddle, boundary]);
