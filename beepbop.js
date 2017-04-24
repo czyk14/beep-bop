@@ -40,11 +40,13 @@ function game(){
 	});
 
 	// create two boxes and a ground
-// 	var boxA = Bodies.rectangle(400, 200, 80, 80);
-// 	var boxB = Bodies.rectangle(450, 50, 80, 80);
+	var boxA = Bodies.rectangle(400, 200, 80, 80);
+	var boxB = Bodies.rectangle(450, 50, 80, 80);
+	alert(boxA);
 	var lPaddle = Body.create(document.getElementById("leftPaddle"));
+	alert(lPaddle);
 	var rPaddle = Body.create(document.getElementById("rightPaddle"));
-// 	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 	var boundary = Body.create(document.getElementById("field").style.border);
 
 	// add all of the bodies to the world
