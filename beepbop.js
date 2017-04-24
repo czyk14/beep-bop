@@ -47,7 +47,7 @@ function game(){
 	var boundary = document.getElementById("field").style.border;
 
 	// add all of the bodies to the world
-	World.add(engine.world, [lPaddle, rPaddle, ground]);
+	World.add(engine.world, [lPaddle, rPaddle, boundary]);
 
 	// run the engine
 	Engine.run(engine);
