@@ -36,7 +36,7 @@ function game(){
 
 	// create a renderer
 	var render = Render.create({
-	    element: $("#field"),
+	    element: document.getElementById("field"),
 	    engine: engine
 	});
 
@@ -44,12 +44,9 @@ function game(){
 // 	var boxA = Bodies.rectangle(400, 200, 80, 80);
 // 	var boxB = Bodies.rectangle(450, 50, 80, 80);
 // 	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
-// 	var lPaddle = Body.create(document.getElementById("leftPaddle"));
-// 	var rPaddle = Body.create(document.getElementById("rightPaddle"));
-// 	var boundary = Body.create(document.getElementById("field").style.border, {isStatic: true});
-	var lPaddle = $("#leftPaddle");
-	var rPaddle = $("#rightPaddle");
-	var boundary = $("#field").style.border;
+	var lPaddle = Body.create(document.getElementById("leftPaddle"));
+	var rPaddle = Body.create(document.getElementById("rightPaddle"));
+	var boundary = Body.create(document.getElementById("field").style.border, {isStatic: true});
 
 	// add all of the bodies to the world
 	World.add(engine.world, [lPaddle, rPaddle, boundary]);
@@ -184,36 +181,3 @@ function movePaddles(keyCode) {
 
 	}
 }
-
-// game = function(){
-// 	// module aliases
-// 	var Engine = Matter.Engine,
-// 	    Render = Matter.Render,
-// 	    World = Matter.World,
-// 	    Bodies = Matter.Bodies;
-
-// 	// create an engine
-// 	var engine = Engine.create();
-
-// 	// create a renderer
-// 	var render = Render.create({
-// 	    element: document.body,
-// 	    engine: engine
-// 	});
-
-// 	// create two boxes and a ground
-// 	var boxA = Bodies.rectangle(400, 200, 80, 80);
-// 	var boxB = Bodies.rectangle(450, 50, 80, 80);
-// 	var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
-
-// 	// add all of the bodies to the world
-// 	World.add(engine.world, [boxA, boxB, ground]);
-
-// 	// run the engine
-// 	Engine.run(engine);
-
-// 	// run the renderer
-// 	Render.run(render);
-	
-// }
-
