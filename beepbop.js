@@ -21,13 +21,13 @@ $(document).ready(function(){
 	game();
 });
 
-function game(){
-	var canvas = document.getElementById('field');
-	var ctx = canvas.getContext('2d');
+// function game(){
+// 	var canvas = document.getElementById('field');
+// 	var ctx = canvas.getContext('2d');
 
-	ctx.fillStyle = 'green';
-	ctx.fillRect(10, 10, 100, 100);
-}
+// 	ctx.fillStyle = 'green';
+// 	ctx.fillRect(10, 10, 100, 100);
+// }
 
 
 // function game(){
