@@ -13,15 +13,7 @@
 	<script src="pixi.min.js" type="text/javascript"></script>
 	
 	<body>
-		<script type="text/javascript">
-    var type = "WebGL"
-    if(!PIXI.utils.isWebGLSupported()){
-      type = "canvas"
-    }
-
-    PIXI.utils.sayHello(type)
-  </script>
-		<canvas id = "field" class = "flash">
+		<div id = "field" class = "flash">
 			<div id = "scoreBoard" class = "flash">
 				<div id= "scoreTitle" class = "flash">SCORE:</div>
 				<div id = "scores">
@@ -41,7 +33,7 @@
 			<div id = "ball">
 				<p id = "ballCenter"></p>
 			</div>		
-		</canvas>
+		</div>
 	</body>
 
 </html>
