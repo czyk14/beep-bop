@@ -4,12 +4,14 @@ var launched = false;
 var turnNum = 0;
 var p1Score = 0;
 var p2Score = 0;
-var w = parseInt($('#ball').width());
-//var w = $('#ball').width();
+var w;
+
 var h;
 var centerL;
 var centerT;
 $(document).ready(function(){
+	w = parseInt($('#ball').width());
+//  	w = $('#ball').width();
 	$('#ball').height(w);
 //	alert("height should now be set");
 	h = $('#ball').height()+(2 * parseInt($('#ball').css('border-left-width')));
