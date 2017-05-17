@@ -11,7 +11,7 @@ var centerL;
 var centerT;
 $(document).ready(function(){
 	$('#ball').height(w);
-	alert("height should now be set");
+//	alert("height should now be set");
 	h = $('#ball').height()+(2 * parseInt($('#ball').css('border-left-width')));
 	w += 2 * parseInt($('#ball').css('border-left-width'))
 	centerT = ($("#field").height()/2) - (h/2);
