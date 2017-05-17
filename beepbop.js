@@ -4,7 +4,7 @@ var launched = false;
 var turnNum = 0;
 var p1Score = 0;
 var p2Score = 0;
-var w = parseInt($('#ball').outerWidth());
+var w = parseInt($('#ball').width());
 var h;
 var centerL;
 var centerT;
